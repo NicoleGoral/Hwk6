@@ -13,7 +13,7 @@
         Check out:
     </h1>
 
-    <a class="btn btn-primary" href="One.php"  role="button"> Plotly.js </a> 
+    <a class="btn btn-primary" href="one.php"  role="button"> D3.js </a> 
     <a class="btn btn-primary" href="funTwo.php"  role="button"> JS bootstrap</a> 
     <a class="btn btn-primary" href="funThree.html"  role="button"> D3.js </a> 
     <a class="btn btn-primary" href="funFour.php"  role="button"> jquery </a> 

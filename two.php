@@ -7,7 +7,6 @@
 <div id="myPlot" style="width:100%;max-width:700px"></div>
 
 <script>
-   
 var x = ['day 1', 'day 1', 'day 1', 'day 1', 'day 1', 'day 1',
          'day 2', 'day 2', 'day 2', 'day 2', 'day 2', 'day 2']
 
@@ -46,7 +45,6 @@ var layout = {
 };
 
 Plotly.newPlot('myDiv', data, layout);
-   
 </script>
 
 </body>

@@ -10,18 +10,18 @@
 <body>
 <h2>D3.js Scatter-Plot</h2>
 
-<svg id="myPlot" style="width:500px;height:500px"></svg>
+<svg id="myPlot" style="width:500px;height:400px"></svg>
 
 <script>
 // Set Dimensions
-const xSize = 500; 
-const ySize = 500;
+const xSize = 400; 
+const ySize = 400;
 const margin = 40;
 const xMax = xSize - margin*2;
 const yMax = ySize - margin*2;
 
 // Create Random Points
-const numPoints = 100;
+const numPoints = 50;
 const data = [];
 for (let i = 0; i < numPoints; i++) {
   data.push([Math.random() * xMax, Math.random() * yMax]);
@@ -35,7 +35,7 @@ const svg = d3.select("#myPlot")
 
 // X Axis
 const x = d3.scaleLinear()
-  .domain([0, 500])
+  .domain([0, 400])
   .range([0, xMax]);
 
 svg.append("g")
@@ -44,7 +44,7 @@ svg.append("g")
 
 // Y Axis
 const y = d3.scaleLinear()
-  .domain([0, 500])
+  .domain([0, 400])
   .range([ yMax, 0]);
 
 svg.append("g")
@@ -58,7 +58,7 @@ svg.append('g')
   .attr("cx", function (d) { return d[0] } )
   .attr("cy", function (d) { return d[1] } )
   .attr("r", 3)
-  .style("fill", "Red");
+  .style("fill", "Purple");
 </script>
 
 </body>

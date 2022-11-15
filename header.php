@@ -21,7 +21,7 @@
           <a class="nav-link" href="two.php">Box Plot</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="three.php">Chart.js</a>
+          <a class="nav-link" href="three.php">Pie Chart</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="four.php">Chart.js</a>

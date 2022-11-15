@@ -5,6 +5,8 @@
 <h1 style="background-color:yellow; text-align:center;">Nicole's Homework 6: JavaScript Libraries</h1>
       
 <script src="https://plotly.com/javascript/polar-chart/.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
+        <script src="plotly-2.16.1.min.js"></script>
 
 <body>
 <div id="myPlot" style="width:100%;max-width:800px"></div>

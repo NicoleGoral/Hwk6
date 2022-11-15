@@ -24,7 +24,7 @@
           <a class="nav-link" href="three.php">Pie Chart</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="four.php">Chart.js</a>
+          <a class="nav-link" href="four.php">Polar Chart</a>
         </li>
       </ul>
     </div>

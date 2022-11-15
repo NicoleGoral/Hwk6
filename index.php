@@ -5,61 +5,20 @@
 
 <h1 style="background-color:yellow; text-align:center;">Nicole's Homework 6: JavaScript Libraries</h1>
 	
-<html>
-<script src="https://d3js.org/d3.v4.js"></script>
-<body>
-<h2>D3.js Scatter-Plot</h2>
+<?php require_once("header.php")?>
 
-<svg id="myPlot" style="width:500px;height:500px"></svg>
 
-<script>
-// Set Dimensions
-const xSize = 500; 
-const ySize = 500;
-const margin = 40;
-const xMax = xSize - margin*2;
-const yMax = ySize - margin*2;
+<div>
+    <h1>
+        Check out:
+    </h1>
 
-// Create Random Points
-const numPoints = 100;
-const data = [];
-for (let i = 0; i < numPoints; i++) {
-  data.push([Math.random() * xMax, Math.random() * yMax]);
-}
+    <a class="btn btn-primary" href="One.php"  role="button"> Plotly.js </a> 
+    <a class="btn btn-primary" href="funTwo.php"  role="button"> JS bootstrap</a> 
+    <a class="btn btn-primary" href="funThree.html"  role="button"> D3.js </a> 
+    <a class="btn btn-primary" href="funFour.php"  role="button"> jquery </a> 
+</div>
 
-// Append SVG Object to the Page
-const svg = d3.select("#myPlot")
-  .append("svg")
-  .append("g")
-  .attr("transform","translate(" + margin + "," + margin + ")");
-
-// X Axis
-const x = d3.scaleLinear()
-  .domain([0, 500])
-  .range([0, xMax]);
-
-svg.append("g")
-  .attr("transform", "translate(0," + yMax + ")")
-  .call(d3.axisBottom(x));
-
-// Y Axis
-const y = d3.scaleLinear()
-  .domain([0, 500])
-  .range([ yMax, 0]);
-
-svg.append("g")
-  .call(d3.axisLeft(y));
-
-// Dots
-svg.append('g')
-  .selectAll("dot")
-  .data(data).enter()
-  .append("circle")
-  .attr("cx", function (d) { return d[0] } )
-  .attr("cy", function (d) { return d[1] } )
-  .attr("r", 3)
-  .style("fill", "Red");
-</script>
 
 </body>
 </html>

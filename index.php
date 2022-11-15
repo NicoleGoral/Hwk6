@@ -14,9 +14,9 @@
     </h1>
 
     <a class="btn btn-primary" href="one.php"  role="button"> D3.js </a> 
-    <a class="btn btn-primary" href="funTwo.php"  role="button"> JS bootstrap</a> 
-    <a class="btn btn-primary" href="funThree.html"  role="button"> D3.js </a> 
-    <a class="btn btn-primary" href="funFour.php"  role="button"> jquery </a> 
+    <a class="btn btn-primary" href="two.html"  role="button"> JS bootstrap</a> 
+    <a class="btn btn-primary" href="three.php"  role="button"> D3.js </a> 
+    <a class="btn btn-primary" href="four.php"  role="button"> jquery </a> 
 </div>
 
 

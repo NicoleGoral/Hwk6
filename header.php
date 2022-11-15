@@ -18,7 +18,7 @@
           <a class="nav-link active" aria-current="page" href="one.php">D3 Scatter Plot</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="two.php">Plotly</a>
+          <a class="nav-link" href="two.html">Plotly</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="three.php">Chart.js</a>

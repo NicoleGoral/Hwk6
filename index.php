@@ -10,13 +10,8 @@
 
 <div>
     <h1>
-        Check out:
+        Check out all new libraries!
     </h1>
-
-    <a class="btn btn-primary" href="one.php"  role="button"> D3.js </a> 
-    <a class="btn btn-primary" href="two.html"  role="button"> JS bootstrap</a> 
-    <a class="btn btn-primary" href="three.php"  role="button"> D3.js </a> 
-    <a class="btn btn-primary" href="four.php"  role="button"> jquery </a> 
 </div>
 
 

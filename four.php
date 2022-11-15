@@ -1,87 +1,45 @@
 <?php require_once("header.php"); ?>
 <!DOCTYPE html>
 <html>
-      
-<h1 style="background-color:yellow; text-align:center;">Nicole's Homework 6: JavaScript Libraries</h1>
-      
-<script src="https://plotly.com/javascript/polar-chart/.js"></script>
-<script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
-        <script src="plotly-2.16.1.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <body>
-<div id="myPlot" style="width:100%;max-width:800px"></div>
+<div id="myPlot" style="width:100%;max-width:700px"></div>
 
 <script>
-d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/polar_dataset.csv', function(err, rows){
-      function unpack(rows, key) {
-          return rows.map(function(row) { return row[key]; });
-      }
+var exp1 = "x";
+var exp2 = "1.5*x";
+var exp3 = "1.5*x + 7";
+// Generate values
 
-var trace1 = {
-  r: unpack(rows, 'x1'),
-  theta: unpack(rows, 'y'),
-  mode: 'lines',
-  name: 'Figure8',
-  line: {color: 'peru'},
-  type: 'scatterpolar'
-};
+var x1Values = [];
+var x2Values = [];
+var x3Values = [];
+var y1Values = [];
+var y2Values = [];
+var y3Values = [];
 
-var trace2 = {
-  r: unpack(rows, 'x2'),
-  theta: unpack(rows, 'y'),
-  mode: 'lines',
-  name: 'Cardioid',
-  line: {color: 'darkviolet'},
-  type: 'scatterpolar'
-};
+for (var x = 0; x <= 10; x += 1) {
+  x1Values.push(x);
+  x2Values.push(x);
+  x3Values.push(x);
+  y1Values.push(eval(exp1));
+  y2Values.push(eval(exp2));
+  y3Values.push(eval(exp3));
+}
 
-var trace3 = {
-  r: unpack(rows, 'x3'),
-  theta: unpack(rows, 'y'),
-  mode: 'lines',
-  name: 'Hypercardioid',
-  line: {color: 'deepskyblue'},
-  type: 'scatterpolar'
-};
+// Define Data
+var data = [
+  {x: x1Values, y: y1Values, mode:"lines"},
+  {x: x2Values, y: y2Values, mode:"lines"},
+  {x: x3Values, y: y3Values, mode:"lines"}
+];
 
-var trace4 = {
+//Define Layout
+var layout = {title: "[y=" + exp1 + "]  [y=" + exp2 + "]  [y=" + exp3 + "]"};
 
-  r: unpack(rows, 'x4'),
-  theta: unpack(rows, 'y'),
-  mode: 'lines',
-  name: 'Subcardioid',
-  line: {color: 'orangered'},
-  type: 'scatterpolar'
-};
-
-var trace5 = {
-
-  r: unpack(rows, 'x5'),
-  theta: unpack(rows, 'y'),
-  mode: 'lines',
-  name: 'Supercardioid',
-  marker: {
-    color: 'none',
-    line: {color: 'green'}
-  },
-  type: 'scatterpolar'
-};
-
-var data = [trace1, trace2, trace3, trace4, trace5];
-
-var layout = {
-  title: 'Mic Patterns',
-  font: {
-    family: 'Arial, sans-serif;',
-    size: 12,
-    color: '#000'
-  },
-  showlegend: true,
-  orientation: -90
-};
-Plotly.newPlot('myDiv', data, layout);
-});
-
+// Display using Plotly
+Plotly.newPlot("myPlot", data, layout);
 </script>
 
 </body>

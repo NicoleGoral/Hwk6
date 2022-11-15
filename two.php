@@ -1,7 +1,10 @@
 <?php require_once("header.php"); ?>
 <!DOCTYPE html>
 <html>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+         
+<h1 style="background-color:yellow; text-align:center;">Nicole's Homework 6: JavaScript Libraries</h1>
+         
+<script src="https://plotly.com/javascript/box-plots/"></script>
 
 <body>
 <div id="myPlot" style="width:100%;max-width:700px"></div>

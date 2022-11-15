@@ -28,7 +28,7 @@ var layout = {
   title: 'Horizontal Box Plot'
 };
 
-Plotly.newPlot('myDiv', data, layout);
+Plotly.newPlot('myPlot', data, layout);
 </script>
 
 </body>
